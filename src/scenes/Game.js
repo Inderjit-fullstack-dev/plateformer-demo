@@ -10,7 +10,7 @@ class Game extends Phaser.Scene {
   create() {
     const map = this.createMap();
     const { collider } = this.createLayer(map);
-    const player = new Player(this, 50, 200);
+    const player = new Player(this, 50, 20);
     this.physics.add.collider(player, collider);
   }
 
